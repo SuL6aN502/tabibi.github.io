@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 88px;
+  background: #fff;
+  box-shadow: 0px 6px 64px 0px rgba(0, 0, 0, 0.25);
+}
+
+header {
+  color: aliceblue;
+}/*# sourceMappingURL=style.css.map */
