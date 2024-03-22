@@ -1,1 +1,93 @@
-@use "/Global/CSS/style.scss";
+@use "../../../Global/CSS/global" as *;
+main {
+  & {
+    @include size(100%, auto);
+    @include flex(start, center);
+    flex-direction: column;
+  }
+  section {
+    & {
+      @include size(87%, 100vh);
+      @include flex(end, start);
+      position: relative;
+    }
+    > div {
+        // الداائرة الكبيرة
+      & {
+        @include size(700px, 700px);
+        background: linear-gradient(190deg, #83e5d6 19.69%, #08ddfd);
+        border-radius: 100%;
+        position: absolute;
+        right: 78%;
+        top: 37%;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+      }
+    //   الدائرة الصغيرة
+      &::after {
+        content: "";
+        @include size(20%, 20%);
+        position: absolute;
+        background: linear-gradient(16deg, #83e5d6 19.69%, #08ddfd);
+        border-radius: 100%;
+        top: -4.7%;
+        right: 0;
+        z-index: -1;
+      }
+    //   ظل ازرق خلف الدائرة الكبيرة
+    &::before{
+        content: "";
+        @include size(700px,700px);
+        background-image: radial-gradient(#01ddff63, transparent 75%);
+        bottom: 0%;
+        left: 40%;
+        position: absolute;
+        z-index: -1;
+    }
+    }
+    hgroup {
+      & {
+        @include size(40%, 85%);
+        @include flex(center, end);
+        flex-direction: column;
+        text-align: right;
+        gap: 10%;
+      }
+      h1 {
+        & {
+            @include size(85%,10%);
+          color: $text;
+          font-size: 1.875rem;
+          position: relative;
+        }
+        // الظل الازرق خلف النص
+        &::before {
+          content: "";
+          @include size(350px, 350px);
+          background-image: radial-gradient(#01ddff21, transparent 80%);
+          bottom: -60%;
+          left: 50%;
+          position: absolute;
+          z-index: -1;
+        }
+        span {
+          @include linear(90deg, #2cd2be, #24d3ee);
+        }
+      }
+      > a {
+        & {
+          @include size(189px, 6%);
+          @include flex(center, center);
+          border-radius: 45px;
+          color: #fff;
+          text-decoration: none;
+          background: linear-gradient(98deg, #02dcfe 5.46%, #60efcf 87.87%);
+          transition: 0.3s;
+        }
+        &:hover {
+            transform: translate(0, -10px);
+          
+        }
+      }
+    }
+  }
+}

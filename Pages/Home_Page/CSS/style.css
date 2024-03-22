@@ -1,3 +1,191 @@
-@use "/Global/CSS/style.scss";
+@import url("https://fonts.googleapis.com/css2?family=Cairo:slnt,wght@-11..11,200..1000&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cairo;
+}
 
-/*# sourceMappingURL=style.css.map */
+html {
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+  height: auto;
+  color: #3de4e2;
+}
+
+header {
+  width: 100%;
+  height: 11.5vh;
+  background: #fff;
+  box-shadow: 0px 6px 64px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding: 0 6% 0 6%;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+header nav > div {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 25%;
+  gap: 10%;
+}
+header nav > div a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  text-decoration: none;
+  color: #2e2e2e;
+  padding: 8px 12px 8px 12px;
+  border: #2e2e2e 1px solid;
+  border-radius: 45px;
+  transition: 0.3s;
+}
+header nav > div a:nth-child(1) {
+  background: #12DEF7;
+  color: #fff;
+}
+header nav ul {
+  width: 25%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header nav ul li {
+  list-style: none;
+}
+header nav ul li a {
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  color: #2e2e2e;
+  position: relative;
+}
+header nav ul li a::before {
+  content: "";
+  background-color: #2e2e2e;
+  position: absolute;
+  bottom: -2px;
+  right: 50%;
+  height: 2px;
+  transition: 0.3s all;
+  width: 0;
+}
+header nav ul li a::after {
+  content: "";
+  background-color: #2e2e2e;
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  height: 2px;
+  transition: 0.3s all;
+  width: 0;
+}
+header nav ul li a:hover::after, header nav ul li a:hover::before {
+  width: 50%;
+}
+
+main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+}
+main section {
+  width: 87%;
+  height: 100vh;
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  position: relative;
+}
+main section > div {
+  width: 700px;
+  height: 700px;
+  background: linear-gradient(190deg, #83e5d6 19.69%, #08ddfd);
+  border-radius: 100%;
+  position: absolute;
+  right: 78%;
+  top: 37%;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}
+main section > div::after {
+  content: "";
+  width: 20%;
+  height: 20%;
+  position: absolute;
+  background: linear-gradient(16deg, #83e5d6 19.69%, #08ddfd);
+  border-radius: 100%;
+  top: -4.7%;
+  right: 0;
+  z-index: -1;
+}
+main section > div::before {
+  content: "";
+  width: 700px;
+  height: 700px;
+  background-image: radial-gradient(rgba(1, 221, 255, 0.3882352941), transparent 75%);
+  bottom: 0%;
+  left: 40%;
+  position: absolute;
+  z-index: -1;
+}
+main section hgroup {
+  width: 40%;
+  height: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  flex-direction: column;
+  text-align: right;
+  gap: 10%;
+}
+main section hgroup h1 {
+  width: 85%;
+  height: 10%;
+  color: #2e2e2e;
+  font-size: 1.875rem;
+  position: relative;
+}
+main section hgroup h1::before {
+  content: "";
+  width: 350px;
+  height: 350px;
+  background-image: radial-gradient(rgba(1, 221, 255, 0.1294117647), transparent 80%);
+  bottom: -60%;
+  left: 50%;
+  position: absolute;
+  z-index: -1;
+}
+main section hgroup h1 span {
+  background-image: linear-gradient(90deg, #2cd2be, #24d3ee);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+main section hgroup > a {
+  width: 189px;
+  height: 6%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 45px;
+  color: #fff;
+  text-decoration: none;
+  background: linear-gradient(98deg, #02dcfe 5.46%, #60efcf 87.87%);
+  transition: 0.3s;
+}
+main section hgroup > a:hover {
+  transform: translate(0, -10px);
+}/*# sourceMappingURL=style.css.map */

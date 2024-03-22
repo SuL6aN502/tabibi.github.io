@@ -5,6 +5,7 @@
   box-sizing: border-box;
   font-family: Cairo;
 }
+
 // color of project
 $text: #2e2e2e;
 $Picton_blue: #3ed6ee;
@@ -29,8 +30,16 @@ $Mint_green: #8df8b7;
   width: $width;
   height: $height;
 }
+html{
+  overflow-x:hidden;
+}
+::-webkit-scrollbar{
+  @include size(3px,auto);
+  color: #3de4e2;
 
+}
 //  Header
+
 
 header {
   & {
@@ -46,22 +55,35 @@ header {
       width: 90%;
     }
     // login and signup btn
+    // ----------------------------------------
     > div {
       & {
-        @include flex(space-between, center);
-        width: 15%;
+        @include flex(start, center);
+        width: 25%;
+        gap: 10%;
       }
       a {
+        @include flex(center,center );
+        width: 40%;
         text-decoration: none;
         color: $text;
-      }
-      > a:nth-child(1) {
-        border: $text 0.7px solid;
+        padding: 8px 12px 8px 12px;
+        border: $text 1px solid;
         border-radius: 45px;
-        padding: 7px 12px 7px 12px;
+        transition: 0.3s;
       }
+      a:nth-child(1){
+        background: #12DEF7;
+        color: #fff;
+      }
+      a:nth-child(1):hover{
+        
+      }
+
     }
+    // ----------------------------------------
     // pages
+    // ----------------------------------------
     ul {
       & {
         width: 25%;
@@ -79,7 +101,9 @@ header {
             color: $text;
             position: relative;
           }
-        // under line pages link
+          // ----------------------------------------
+          // under line pages link
+          // ----------------------------------------
           &::before {
             content: "";
             background-color: $text;
@@ -107,6 +131,7 @@ header {
             }
           }
         }
+        // ----------------------------------------
       }
     }
   }
