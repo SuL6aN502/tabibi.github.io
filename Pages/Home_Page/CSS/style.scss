@@ -4,6 +4,7 @@ main {
     @include size(100%, auto);
     @include flex(start, center);
     flex-direction: column;
+    gap: 20vh;
   }
   // section1
   section:nth-child(1) {
@@ -21,7 +22,7 @@ main {
         position: absolute;
         right: 78%;
         top: 37%;
-        box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+        box-shadow: rgba(0, 0, 0, 0.255) 0px 30px 90px;
       }
       //   الدائرة الصغيرة
       &::after {
@@ -97,13 +98,35 @@ main {
       flex-direction: column;
       height: 300vh;
       text-align: center;
+      position: relative;
+    }
+    // تصميم الدائرة التي في الجانب الايسر
+    span {
+      & {
+        @include size(181px, 181px);
+        background: linear-gradient(0deg, #83e5d6 19.69%, #08ddfd);
+        border-radius: 100%;
+        position: absolute;
+        right: -8%;
+        top: -3%;
+        box-shadow: rgba(0, 0, 0, 0.218) 0px 30px 90px;
+      }
+      &::after {
+        content: "";
+        @include size(700px, 700px);
+        background: radial-gradient(#08dcfd30, transparent 70%);
+        border-radius: 100%;
+        position: absolute;
+        right: -140%;
+        top: -135%;
+      }
     }
     div {
       & {
         @include flex(space-between, center);
         width: 80%;
       }
-      &:nth-child(odd){
+      &:nth-child(even) {
         flex-direction: row-reverse;
       }
       hgroup {
@@ -112,10 +135,23 @@ main {
           width: 40%;
         }
 
-        h3{
-          font-size: 1.9rem;
+        h3 {
+          & {
+            font-size: 1.9rem;
+            position: relative;
+          }
+          &::after {
+            content: "";
+            @include size(700px, 700px);
+            background: radial-gradient(#08dcfd18, transparent 70%);
+            border-radius: 100%;
+            position: absolute;
+            right: 0%;
+            top: -500%;
+            left: 0%;
+          }
         }
-        p{
+        p {
           font-size: 1.1rem;
         }
       }

@@ -102,6 +102,7 @@ main {
   justify-content: start;
   align-items: center;
   flex-direction: column;
+  gap: 20vh;
 }
 main section:nth-child(1) {
   width: 87%;
@@ -119,7 +120,7 @@ main section:nth-child(1) > div {
   position: absolute;
   right: 78%;
   top: 37%;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+  box-shadow: rgba(0, 0, 0, 0.255) 0px 30px 90px;
 }
 main section:nth-child(1) > div::after {
   content: "";
@@ -196,6 +197,27 @@ main section:nth-child(2) {
   flex-direction: column;
   height: 300vh;
   text-align: center;
+  position: relative;
+}
+main section:nth-child(2) span {
+  width: 181px;
+  height: 181px;
+  background: linear-gradient(0deg, #83e5d6 19.69%, #08ddfd);
+  border-radius: 100%;
+  position: absolute;
+  right: -8%;
+  top: -3%;
+  box-shadow: rgba(0, 0, 0, 0.218) 0px 30px 90px;
+}
+main section:nth-child(2) span::after {
+  content: "";
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(rgba(8, 220, 253, 0.1882352941), transparent 70%);
+  border-radius: 100%;
+  position: absolute;
+  right: -140%;
+  top: -135%;
 }
 main section:nth-child(2) div {
   display: flex;
@@ -203,7 +225,7 @@ main section:nth-child(2) div {
   align-items: center;
   width: 80%;
 }
-main section:nth-child(2) div:nth-child(odd) {
+main section:nth-child(2) div:nth-child(even) {
   flex-direction: row-reverse;
 }
 main section:nth-child(2) div hgroup {
@@ -212,6 +234,18 @@ main section:nth-child(2) div hgroup {
 }
 main section:nth-child(2) div hgroup h3 {
   font-size: 1.9rem;
+  position: relative;
+}
+main section:nth-child(2) div hgroup h3::after {
+  content: "";
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(rgba(8, 220, 253, 0.0941176471), transparent 70%);
+  border-radius: 100%;
+  position: absolute;
+  right: 0%;
+  top: -500%;
+  left: 0%;
 }
 main section:nth-child(2) div hgroup p {
   font-size: 1.1rem;
