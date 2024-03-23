@@ -198,7 +198,6 @@ main section:nth-child(2) form input {
 }
 main section:nth-child(2) form input:focus {
   outline: none;
-  height: 30%;
 }
 main section:nth-child(2) form button {
   width: 70%;
