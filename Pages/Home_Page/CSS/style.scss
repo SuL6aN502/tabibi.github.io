@@ -6,14 +6,14 @@ main {
     flex-direction: column;
   }
   // section1
-  section:nth-child(1){
+  section:nth-child(1) {
     & {
       @include size(87%, 100vh);
       @include flex(end, start);
       position: relative;
     }
     > div {
-        // الداائرة الكبيرة
+      // الداائرة الكبيرة
       & {
         @include size(700px, 700px);
         background: linear-gradient(190deg, #83e5d6 19.69%, #08ddfd);
@@ -23,7 +23,7 @@ main {
         top: 37%;
         box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
       }
-    //   الدائرة الصغيرة
+      //   الدائرة الصغيرة
       &::after {
         content: "";
         @include size(20%, 20%);
@@ -34,16 +34,16 @@ main {
         right: 0;
         z-index: -1;
       }
-    //   ظل ازرق خلف الدائرة الكبيرة
-    &::before{
+      //   ظل ازرق خلف الدائرة الكبيرة
+      &::before {
         content: "";
-        @include size(700px,700px);
+        @include size(700px, 700px);
         background-image: radial-gradient(#01ddff63, transparent 75%);
         bottom: 0%;
         left: 40%;
         position: absolute;
         z-index: -1;
-    }
+      }
     }
     hgroup {
       & {
@@ -55,7 +55,7 @@ main {
       }
       h1 {
         & {
-            @include size(85%,10%);
+          @include size(85%, 10%);
           color: $text;
           font-size: 1.875rem;
           position: relative;
@@ -85,23 +85,40 @@ main {
           transition: 0.3s;
         }
         &:hover {
-            transform: translate(0, -10px);
-          
+          transform: translate(0, -10px);
         }
       }
     }
   }
   // section2
-  section:nth-child(2){
-    &{
-      @include flex(start,center);
+  section:nth-child(2) {
+    & {
+      @include flex(start, center);
       flex-direction: column;
       height: 300vh;
       text-align: center;
     }
-    hgroup{
-    
+    div {
+      & {
+        @include flex(space-between, center);
+        width: 80%;
+      }
+      &:nth-child(odd){
+        flex-direction: row-reverse;
+      }
+      hgroup {
+        & {
+          text-align: right;
+          width: 40%;
+        }
+
+        h3{
+          font-size: 1.9rem;
+        }
+        p{
+          font-size: 1.1rem;
+        }
+      }
     }
   }
-
 }

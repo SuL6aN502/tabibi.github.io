@@ -196,4 +196,23 @@ main section:nth-child(2) {
   flex-direction: column;
   height: 300vh;
   text-align: center;
+}
+main section:nth-child(2) div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+main section:nth-child(2) div:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+main section:nth-child(2) div hgroup {
+  text-align: right;
+  width: 40%;
+}
+main section:nth-child(2) div hgroup h3 {
+  font-size: 1.9rem;
+}
+main section:nth-child(2) div hgroup p {
+  font-size: 1.1rem;
 }/*# sourceMappingURL=style.css.map */
