@@ -22,7 +22,6 @@ main {
       &:nth-child(1) {
         @include size(42.1%, 83%);
         transform: rotate(-43.406deg);
-        border: 1px solid #000;
         top: -3%;
       }
       &:nth-child(2) {

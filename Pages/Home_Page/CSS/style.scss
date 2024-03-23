@@ -5,7 +5,8 @@ main {
     @include flex(start, center);
     flex-direction: column;
   }
-  section {
+  // section1
+  section:nth-child(1){
     & {
       @include size(87%, 100vh);
       @include flex(end, start);
@@ -90,4 +91,17 @@ main {
       }
     }
   }
+  // section2
+  section:nth-child(2){
+    &{
+      @include flex(start,center);
+      flex-direction: column;
+      height: 300vh;
+      text-align: center;
+    }
+    hgroup{
+    
+    }
+  }
+
 }
