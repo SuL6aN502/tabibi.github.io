@@ -76,10 +76,6 @@ header {
         background: #12DEF7;
         color: #fff;
       }
-      a:nth-child(1):hover{
-        
-      }
-
     }
     // ----------------------------------------
     // pages
@@ -100,6 +96,7 @@ header {
             text-decoration: none;
             color: $text;
             position: relative;
+            font-weight: bold;
           }
           // ----------------------------------------
           // under line pages link
