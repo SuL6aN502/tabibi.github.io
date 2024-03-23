@@ -93,4 +93,139 @@ header nav ul li a::after {
 }
 header nav ul li a:hover::after, header nav ul li a:hover::before {
   width: 50%;
+}
+
+header {
+  display: none;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+main section {
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+main section > div {
+  background: linear-gradient(180deg, #02dcfe 0%, #7ce5d8 100%);
+  border-radius: 201.188px;
+  position: absolute;
+}
+main section > div:nth-child(1) {
+  width: 42.1%;
+  height: 83%;
+  transform: rotate(-43.406deg);
+  border: 1px solid #000;
+  top: -3%;
+}
+main section > div:nth-child(2) {
+  width: 19.5%;
+  height: 41%;
+  transform: rotate(-43.406deg);
+  top: -20%;
+  right: 50%;
+  z-index: -1;
+}
+main section > div:nth-child(3) {
+  width: 211px;
+  height: 402px;
+  transform: rotate(-135.131deg);
+  left: -8%;
+  bottom: -13%;
+}
+main section > div:nth-child(4) {
+  width: 149px;
+  height: 285px;
+  transform: rotate(142.33deg);
+  bottom: -12%;
+  right: 35%;
+}
+main section:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  flex-direction: column;
+  padding: 0 10% 0 0;
+}
+main section:nth-child(2) h1 {
+  font-size: 3.3rem;
+}
+main section:nth-child(2) p {
+  font-size: 1.1rem;
+}
+main section:nth-child(2) p > a {
+  color: #3de2ff;
+}
+main section:nth-child(2) form {
+  width: 80%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  flex-direction: column;
+  transition: 0.3s;
+  gap: 15%;
+  position: relative;
+}
+main section:nth-child(2) form label {
+  transition: 0.3s;
+  color: #969696;
+  position: absolute;
+  font-size: 2.1rem;
+  cursor: text;
+}
+main section:nth-child(2) form label:nth-child(3) {
+  top: 48%;
+}
+main section:nth-child(2) form label:nth-child(1) {
+  top: 24%;
+}
+main section:nth-child(2) form input {
+  display: block;
+  height: 16%;
+  width: 70%;
+  text-align: right;
+  border: none;
+  border-bottom: #969696 1px solid;
+  font-size: 2.1rem;
+  padding: 0 10px 0 10px;
+  transition: 0.3s;
+}
+main section:nth-child(2) form input:focus {
+  outline: none;
+  height: 30%;
+}
+main section:nth-child(2) form button {
+  width: 70%;
+  height: 19%;
+  border-radius: 20px;
+  border: 3.529px solid #02dcfe;
+  background: #fff;
+  font-size: 27.318px;
+  box-shadow: 0px 4.047px 25.092px 0px rgba(0, 0, 0, 0.25);
+  transition: 0.3s;
+  cursor: pointer;
+}
+main section:nth-child(2) form button:hover {
+  background-color: #02dcfe;
+}
+
+section:nth-child(2) {
+  gap: 2%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }/*# sourceMappingURL=style.css.map */
