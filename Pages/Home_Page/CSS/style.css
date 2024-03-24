@@ -48,12 +48,22 @@ header nav > div a {
   color: #2e2e2e;
   padding: 8px 12px 8px 12px;
   border: #2e2e2e 1px solid;
-  border-radius: 45px;
+  border-radius: 12px;
   transition: 0.3s;
 }
-header nav > div a:nth-child(1) {
-  background: #12DEF7;
+header nav > div a:hover {
+  background: #12def7;
   color: #fff;
+  border: none;
+}
+header nav > div a:nth-child(1) {
+  background: #12def7;
+  color: #fff;
+}
+header nav > div a:nth-child(1):hover {
+  background: transparent;
+  color: #2e2e2e;
+  border: 1px solid #12def7;
 }
 header nav ul {
   width: 25%;
@@ -196,7 +206,6 @@ main section:nth-child(2) {
   justify-content: start;
   align-items: center;
   flex-direction: column;
-  height: 300vh;
   text-align: center;
   position: relative;
 }
@@ -219,12 +228,14 @@ main section:nth-child(2) span::after {
   position: absolute;
   right: -140%;
   top: -135%;
+  z-index: 1;
 }
 main section:nth-child(2) div {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 80%;
+  height: 50vh;
 }
 main section:nth-child(2) div:nth-child(even) {
   flex-direction: row-reverse;
@@ -242,12 +253,93 @@ main section:nth-child(2) div hgroup h3::after {
   width: 700px;
   height: 700px;
   background: radial-gradient(rgba(8, 220, 253, 0.0941176471), transparent 70%);
-  border-radius: 100%;
   position: absolute;
   right: 0%;
   top: -500%;
   left: 0%;
+  z-index: 1;
 }
 main section:nth-child(2) div hgroup p {
   font-size: 1.1rem;
+}
+main section:nth-child(3) {
+  width: 87%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20%;
+}
+main section:nth-child(3) hgroup:nth-child(1) {
+  text-align: center;
+  font-size: 1.5rem;
+}
+main section:nth-child(3) form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 12%;
+}
+main section:nth-child(3) form input {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border: #222 1px solid;
+  border-left: none;
+  text-align: right;
+  font-size: 1.5rem;
+  padding: 0 1% 0 0;
+  border-radius: 0 15px 15px 0;
+  box-shadow: 0px 0px 26.105px 0px rgba(0, 0, 0, 0.13);
+}
+main section:nth-child(3) form input::after {
+  content: "";
+  width: 50%;
+  height: 50vh;
+  position: absolute;
+  background: radial-gradient(rgba(8, 220, 253, 0.2941176471), transparent 70%);
+  left: 0;
+  bottom: 0;
+}
+main section:nth-child(3) form input:focus {
+  outline: none;
+}
+main section:nth-child(3) form button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4%;
+  height: 100%;
+  background: none;
+  border: #222 1px solid;
+  border-right: none;
+  cursor: pointer;
+  border-radius: 15px 0 0 15px;
+  box-shadow: 0px 0px 26.105px 0px rgba(0, 0, 0, 0.13);
+}
+main section:nth-child(3) form button img {
+  height: 50%;
+  transform: rotate(180deg);
+}
+main section:nth-child(3) hgroup:nth-child(3) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 7%;
+  text-align: center;
+  font-size: 1.65rem;
+}
+main section:nth-child(3) hgroup:nth-child(3) button {
+  width: 33%;
+  font-size: 1.6rem;
+  background: #f3f3f3;
+  border-radius: 16px;
+  border: none;
+  filter: drop-shadow(0px 1px 2.9px rgba(0, 0, 0, 0.25));
+  padding: 5px;
+  white-space: nowrap;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

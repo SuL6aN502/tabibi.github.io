@@ -48,12 +48,22 @@ header nav > div a {
   color: #2e2e2e;
   padding: 8px 12px 8px 12px;
   border: #2e2e2e 1px solid;
-  border-radius: 45px;
+  border-radius: 12px;
   transition: 0.3s;
 }
-header nav > div a:nth-child(1) {
-  background: #12DEF7;
+header nav > div a:hover {
+  background: #12def7;
   color: #fff;
+  border: none;
+}
+header nav > div a:nth-child(1) {
+  background: #12def7;
+  color: #fff;
+}
+header nav > div a:nth-child(1):hover {
+  background: transparent;
+  color: #2e2e2e;
+  border: 1px solid #12def7;
 }
 header nav ul {
   width: 25%;

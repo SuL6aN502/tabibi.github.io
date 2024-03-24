@@ -30,16 +30,14 @@ $Mint_green: #8df8b7;
   width: $width;
   height: $height;
 }
-html{
-  overflow-x:hidden;
+html {
+  overflow-x: hidden;
 }
-::-webkit-scrollbar{
-  @include size(3px,auto);
+::-webkit-scrollbar {
+  @include size(3px, auto);
   color: #3de4e2;
-
 }
 //  Header
-
 
 header {
   & {
@@ -63,18 +61,32 @@ header {
         gap: 10%;
       }
       a {
-        @include flex(center,center );
-        width: 40%;
-        text-decoration: none;
-        color: $text;
-        padding: 8px 12px 8px 12px;
-        border: $text 1px solid;
-        border-radius: 45px;
-        transition: 0.3s;
+        & {
+          @include flex(center, center);
+          width: 40%;
+          text-decoration: none;
+          color: $text;
+          padding: 8px 12px 8px 12px;
+          border: $text 1px solid;
+          border-radius: 12px;
+          transition: 0.3s;
+        }
+        &:hover {
+          background: #12def7;
+          color: #fff;
+          border: none;
+        }
       }
-      a:nth-child(1){
-        background: #12DEF7;
-        color: #fff;
+      a:nth-child(1) {
+        &{
+          background: #12def7;
+          color: #fff;
+        }
+        &:hover{
+          background: transparent;
+          color: $text;
+          border: 1px solid #12def7;
+        }
       }
     }
     // ----------------------------------------

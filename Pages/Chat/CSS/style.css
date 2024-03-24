@@ -106,120 +106,76 @@ header nav ul li a:hover::after, header nav ul li a:hover::before {
   width: 50%;
 }
 
-header {
-  display: none;
-}
-
 main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main section {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background: #222;
+  direction: rtl;
+  padding: 5% 0 5% 0;
+}
+main section form {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100vh;
+  height: 10%;
 }
-main section {
-  width: 50%;
+main section form input {
+  width: 80%;
   height: 100%;
   position: relative;
-}
-main section > div {
-  background: linear-gradient(180deg, #02dcfe 0%, #7ce5d8 100%);
-  border-radius: 201.188px;
-  position: absolute;
-}
-main section > div:nth-child(1) {
-  width: 42.1%;
-  height: 83%;
-  transform: rotate(-43.406deg);
-  top: -3%;
-}
-main section > div:nth-child(2) {
-  width: 19.5%;
-  height: 41%;
-  transform: rotate(-43.406deg);
-  top: -20%;
-  right: 50%;
-  z-index: -1;
-}
-main section > div:nth-child(3) {
-  width: 211px;
-  height: 402px;
-  transform: rotate(-135.131deg);
-  left: -8%;
-  bottom: -13%;
-}
-main section > div:nth-child(4) {
-  width: 149px;
-  height: 285px;
-  transform: rotate(142.33deg);
-  bottom: -12%;
-  right: 35%;
-}
-main section:nth-child(2) {
-  display: flex;
-  justify-content: center;
-  align-items: end;
-  flex-direction: column;
-  padding: 0 10% 0 0;
-}
-main section:nth-child(2) h1 {
-  font-size: 3.3rem;
-}
-main section:nth-child(2) p {
-  font-size: 1.1rem;
-}
-main section:nth-child(2) p > a {
-  color: #3de2ff;
-}
-main section:nth-child(2) form {
-  width: 80%;
-  height: 40%;
-  display: flex;
-  justify-content: center;
-  align-items: end;
-  flex-direction: column;
-  transition: 0.3s;
-  gap: 15%;
-  position: relative;
-}
-main section:nth-child(2) form label {
-  transition: 0.3s;
-  color: #969696;
-  position: absolute;
-  font-size: 2.1rem;
-  cursor: text;
-}
-main section:nth-child(2) form label:nth-child(3) {
-  top: 48%;
-}
-main section:nth-child(2) form label:nth-child(1) {
-  top: 24%;
-}
-main section:nth-child(2) form input {
-  display: block;
-  height: 16%;
-  width: 70%;
+  border: #222 1px solid;
+  border-left: none;
   text-align: right;
-  border: none;
-  border-bottom: #969696 1px solid;
-  font-size: 2.1rem;
-  padding: 0 10px 0 10px;
-  transition: 0.3s;
+  font-size: 1.5rem;
+  padding: 0 1% 0 0;
+  border-radius: 0 16px 16px 0;
+  background: rgba(255, 255, 255, 0.2705882353);
+  box-shadow: 0px 0px 17.919px 0px rgba(0, 0, 0, 0.1);
 }
-main section:nth-child(2) form input:focus {
+main section form input::-moz-placeholder {
+  color: aliceblue;
+}
+main section form input::placeholder {
+  color: aliceblue;
+}
+main section form input::after {
+  content: "";
+  width: 50%;
+  height: 50vh;
+  position: absolute;
+  background: radial-gradient(rgba(8, 220, 253, 0.2941176471), transparent 70%);
+  left: 0;
+  bottom: 0;
+}
+main section form input:focus {
   outline: none;
 }
-main section:nth-child(2) form button {
-  width: 70%;
-  height: 19%;
-  border-radius: 20px;
-  border: 3.529px solid #02dcfe;
-  background: #fff;
-  font-size: 27.318px;
-  box-shadow: 0px 4.047px 25.092px 0px rgba(0, 0, 0, 0.25);
-  transition: 0.3s;
+main section form button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2705882353);
+  border: #222 1px solid;
+  border-right: none;
   cursor: pointer;
+  border-radius: 15px 0 0 15px;
+  box-shadow: 0px 0px 26.105px 0px rgba(0, 0, 0, 0.13);
 }
-main section:nth-child(2) form button:hover {
-  background-color: #02dcfe;
+main section form button img {
+  height: 40%;
+  transform: rotate(180deg);
 }/*# sourceMappingURL=style.css.map */
