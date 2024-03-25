@@ -106,6 +106,10 @@ header nav ul li a:hover::after, header nav ul li a:hover::before {
   width: 50%;
 }
 
+html {
+  overflow: hidden;
+}
+
 main {
   width: 100%;
   height: 100vh;
@@ -114,15 +118,23 @@ main {
   align-items: center;
 }
 main section {
-  width: 90%;
+  width: 80%;
   height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  background: #222;
+  background: #3a3a3a;
   direction: rtl;
   padding: 5% 0 5% 0;
+}
+main section h1 {
+  color: aliceblue;
+  font-size: 3.75rem;
+  background: linear-gradient(265deg, #61d9ff -85.46%, #fff 49.5%, #7ce5d8 150%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 main section form {
   display: flex;
@@ -178,4 +190,66 @@ main section form button {
 main section form button img {
   height: 40%;
   transform: rotate(180deg);
+}
+main aside {
+  width: 20%;
+  height: 100%;
+  background: #232323;
+}
+main aside div:nth-child(1) {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 10%;
+  flex-direction: column;
+  border-bottom: #888 1px solid;
+  gap: 5%;
+}
+main aside div:nth-child(1) button {
+  width: 90%;
+  height: 11.7%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 5%;
+  gap: 5%;
+  font-size: 1.2rem;
+  border-radius: 7.875px;
+  border: 1.125px solid #888;
+  background: #232323;
+  color: #ececec;
+  font-weight: 500;
+  cursor: pointer;
+}
+main aside div:nth-child(1) button span {
+  font-size: 2rem;
+  background-image: linear-gradient(180deg, #1ddff6, #7be6d9);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+main aside div:nth-child(2) {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: start;
+  align-items: end;
+  padding: 10%;
+  flex-direction: column;
+  gap: 5%;
+}
+main aside div:nth-child(2) button {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 80%;
+  height: 30%;
+  gap: 10%;
+  background: none;
+  border: none;
+  color: aliceblue;
+  cursor: pointer;
+  font-size: 1.1em;
+  position: relative;
 }/*# sourceMappingURL=style.css.map */
