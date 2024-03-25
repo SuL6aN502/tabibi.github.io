@@ -8,10 +8,6 @@
 
 // color of project
 $text: #2e2e2e;
-$Picton_blue: #3ed6ee;
-$Turquaise: #3de4e2;
-$Bright_turquaise: #60efcf;
-$Mint_green: #8df8b7;
 //يقوم بتلوين النص الى لونين
 @mixin linear($dir, $firstColor, $SecondColor) {
   background-image: linear-gradient($dir, $firstColor, $SecondColor);

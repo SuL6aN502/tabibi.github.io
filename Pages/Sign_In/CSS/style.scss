@@ -1,7 +1,4 @@
 @use "../../../Global/CSS/global" as *;
-header {
-  display: none;
-}
 main {
   & {
     @include flex(center, center);
@@ -45,6 +42,7 @@ main {
       }
     }
   }
+  // نموذح تسجيل الدخول
   section:nth-child(2) {
     & {
       @include flex(center, end);
@@ -62,13 +60,14 @@ main {
         color: #3de2ff;
       }
     }
+    // تنسيقات المدخلات inputs
     form {
       & {
-        @include size(80%, 40%);
+        @include size(80%, 50%);
         @include flex(center, end);
         flex-direction: column;
         transition: 0.3s;
-        gap: 15%;
+        gap: 5%;
         position: relative;
       }
 
@@ -106,8 +105,7 @@ main {
       }
       button {
         & {
-          width: 70%;
-          height: 19%;
+          @include size(70%, 15%);
           border-radius: 20px;
           border: 3.529px solid #02dcfe;
           background: #fff;
@@ -116,8 +114,22 @@ main {
           transition: 0.3s;
           cursor: pointer;
         }
+        &:hover {
+          background-color: #02dcfe;
+        }
+      }
+      p {
+        width: 70%;
+        @include flex(center, center);
+      }
+      button:nth-child(5) {
+        & {
+          color: #0a9a8f;
+          font-family: "GE Dinkum";
+          font-size: 30px;
+        }
         &:hover{
-            background-color: #02dcfe;
+          color: aliceblue;
         }
       }
     }

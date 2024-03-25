@@ -184,10 +184,6 @@ footer > img:nth-child(5) {
   transform: scaleX(-1);
 }
 
-header {
-  display: none;
-}
-
 main {
   display: flex;
   justify-content: center;
@@ -251,13 +247,13 @@ main section:nth-child(2) p > a {
 }
 main section:nth-child(2) form {
   width: 80%;
-  height: 40%;
+  height: 50%;
   display: flex;
   justify-content: center;
   align-items: end;
   flex-direction: column;
   transition: 0.3s;
-  gap: 15%;
+  gap: 5%;
   position: relative;
 }
 main section:nth-child(2) form label {
@@ -289,7 +285,7 @@ main section:nth-child(2) form input:focus {
 }
 main section:nth-child(2) form button {
   width: 70%;
-  height: 19%;
+  height: 15%;
   border-radius: 20px;
   border: 3.529px solid #02dcfe;
   background: #fff;
@@ -300,6 +296,20 @@ main section:nth-child(2) form button {
 }
 main section:nth-child(2) form button:hover {
   background-color: #02dcfe;
+}
+main section:nth-child(2) form p {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main section:nth-child(2) form button:nth-child(5) {
+  color: #0a9a8f;
+  font-family: "GE Dinkum";
+  font-size: 30px;
+}
+main section:nth-child(2) form button:nth-child(5):hover {
+  color: aliceblue;
 }
 
 section:nth-child(2) {
