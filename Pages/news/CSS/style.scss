@@ -1,0 +1,31 @@
+@use "../../../Global/CSS/global" as *;
+main {
+  & {
+    @include size(100%, auto);
+    @include flex(center, end);
+    flex-direction: column;
+    padding: 1.5% 7.5% 1.5% 7.5%;
+    gap: 10vh;
+  }
+  hgroup {
+    @include flex(center, end);
+    color: $text;
+  }
+  ul {
+    & {
+      direction: rtl;
+      @include flex(center, start);
+      flex-direction: column;
+    }
+    li {
+      & {
+        color: $text;
+        font-size: 1.85rem;
+        font-weight: 700
+      }
+      span {
+        @include linear(96deg, #02dcfe 7.17%, #60efcf 19.57%);
+      }
+    }
+  }
+}

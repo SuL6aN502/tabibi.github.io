@@ -1,4 +1,7 @@
 @use "../../../Global/CSS/global" as *;
+html{
+  overflow: hidden;
+}
 main {
   & {
     @include flex(center, center);
@@ -41,6 +44,12 @@ main {
         right: 35%;
       }
     }
+    img{
+      position: absolute;
+      z-index: -5;
+      right: -10%;
+      bottom: 30%;
+    }
   }
   // نموذح تسجيل الدخول
   section:nth-child(2) {
@@ -48,6 +57,17 @@ main {
       @include flex(center, end);
       flex-direction: column;
       padding: 0 10% 0 0;
+    }
+    >a:nth-child(1){
+      &{
+        width: 5%;
+        height: 5%;
+        position: relative;
+      }
+      >img{
+        width: 100%;
+        height: 100%;
+      }
     }
     h1 {
       font-size: 3.3rem;
@@ -118,9 +138,16 @@ main {
           background-color: #02dcfe;
         }
       }
-      p {
-        width: 70%;
-        @include flex(center, center);
+      div {
+        &{
+          width: 70%;
+          @include flex(center, center);
+          gap: 5%;
+        }
+        hr{
+          border: 1px solid #969696;
+          width: 15%;
+        }
       }
       button:nth-child(5) {
         & {

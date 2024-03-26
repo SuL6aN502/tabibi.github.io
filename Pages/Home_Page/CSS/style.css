@@ -17,20 +17,20 @@ html {
 }
 
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   height: 11.5vh;
   background: #fff;
   box-shadow: 0px 6px 64px 0px rgba(0, 0, 0, 0.25);
-  display: flex;
-  justify-content: right;
-  align-items: center;
-  padding: 0 6% 0 6%;
+  padding: 0 7.5% 0 7.5%;
 }
 header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
+  width: 85%;
 }
 header nav > div {
   display: flex;
@@ -111,41 +111,45 @@ footer {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 50vh;
-  flex-direction: column;
+  height: 30vh;
   position: relative;
+  flex-direction: column;
   gap: 5%;
+  margin: 35vh 0 0 0;
 }
-footer div {
-  width: 100%;
-  height: auto;
+footer hr {
+  border: #000 1px solid;
+  width: 85%;
+}
+footer section {
+  width: 85%;
+  height: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer section div {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-footer div:nth-child(1) {
+footer section div:nth-child(1) {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 5%;
 }
-footer div:nth-child(1) hr {
-  border: #2e2e2e 1px solid;
-  height: 100%;
-  opacity: 0.5;
-  border-radius: 25px;
-}
-footer div:nth-child(2) ul {
+footer section div:nth-child(2) ul {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 15%;
 }
-footer div:nth-child(2) ul li {
+footer section div:nth-child(2) ul li {
   width: 20%;
   list-style: none;
 }
-footer div:nth-child(2) ul li a {
+footer section div:nth-child(2) ul li a {
   text-decoration: none;
   width: 100%;
   white-space: nowrap;
@@ -153,15 +157,8 @@ footer div:nth-child(2) ul li a {
   font-weight: bold;
   font-size: 1.3rem;
 }
-footer div:nth-child(3) {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1%;
-  flex-direction: row-reverse;
-}
-footer div:nth-child(3) img {
-  height: 30px;
+footer section div:nth-child(3) img {
+  height: 60px;
   cursor: pointer;
 }
 footer > img {
@@ -174,7 +171,6 @@ footer > img::after {
   width: 700px;
   height: 700px;
   background: radial-gradient(rgba(8, 220, 253, 0.1882352941), transparent 70%);
-  border-radius: 100%;
   position: absolute;
   right: 0%;
   top: 0%;
@@ -194,7 +190,7 @@ main {
   gap: 20vh;
 }
 main section:nth-child(1) {
-  width: 87%;
+  width: 85%;
   height: 100vh;
   display: flex;
   justify-content: end;
@@ -312,7 +308,7 @@ main section:nth-child(2) div {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
+  width: 85%;
   height: 50vh;
 }
 main section:nth-child(2) div:nth-child(even) {
@@ -341,7 +337,7 @@ main section:nth-child(2) div hgroup p {
   font-size: 1.1rem;
 }
 main section:nth-child(3) {
-  width: 87%;
+  width: 85%;
   height: 60vh;
   display: flex;
   justify-content: center;
@@ -401,23 +397,18 @@ main section:nth-child(3) form button img {
   height: 50%;
   transform: rotate(180deg);
 }
-main section:nth-child(3) hgroup:nth-child(3) {
+main section:nth-child(3) div:nth-child(3) {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
-  gap: 7%;
-  text-align: center;
-  font-size: 1.65rem;
 }
-main section:nth-child(3) hgroup:nth-child(3) button {
-  width: 33%;
+main section:nth-child(3) div:nth-child(3) button {
   font-size: 1.6rem;
   background: #f3f3f3;
   border-radius: 16px;
   border: none;
-  filter: drop-shadow(0px 1px 2.9px rgba(0, 0, 0, 0.25));
-  padding: 5px;
+  filter: drop-shadow(0px 1px 2.9px rgba(0, 0, 0, 0.641));
   white-space: nowrap;
   cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

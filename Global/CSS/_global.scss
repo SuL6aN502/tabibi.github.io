@@ -34,19 +34,18 @@ html {
   color: #3de4e2;
 }
 //  Header
-
 header {
   & {
+    @include flex(space-between, center);
     @include size(100%, 11.5vh);
     background: #fff;
     box-shadow: 0px 6px 64px 0px rgba(0, 0, 0, 0.25);
-    @include flex(right, center);
-    padding: 0 6% 0 6%;
+    padding: 0 7.5% 0 7.5%;
   }
   nav {
     & {
       @include flex(space-between, center);
-      width: 90%;
+      width: 85%;
     }
     // login and signup btn
     // ----------------------------------------
@@ -147,67 +146,66 @@ header {
 footer {
   & {
     @include flex(space-between, center);
-    @include size(100%, 50vh);
-    flex-direction: column;
+    @include size(100%, 30vh);
     position: relative;
+    flex-direction: column;
     gap: 5%;
+    margin: 35vh 0 0 0;
   }
-  div {
-    @include size(100%, auto);
-    @include flex(center, center);
+  hr {
+    border: #000 1px solid;
+    width: 85%;
   }
-  // القسم الاول من الوتر
-  div:nth-child(1) {
+  section {
     & {
+      @include size(85%, 95%);
+      @include flex(space-between, center);
+    }
+    div {
       @include flex(center, center);
-      gap: 5%;
     }
-    hr{
-      border: $text 1px solid;
-      height: 100%;
-      opacity: 0.5;
-      border-radius: 25px;
+    // القسم الاول من الوتر
+    div:nth-child(1) {
+      & {
+        @include flex(center, center);
+        gap: 5%;
+      }
     }
-  }
-  // القسم الثاني من الوتر
-  div:nth-child(2) {
-    & {
-      ul {
-        & {
-          @include flex(center, center);
-          gap: 15%;
-        }
-        li {
+    // القسم الثاني من الوتر
+    div:nth-child(2) {
+      & {
+        ul {
           & {
-            width: 20%;
-            list-style: none;
+            @include flex(center, center);
+            gap: 15%;
           }
-          a{
-            text-decoration: none;
-            width: 100%;
-            white-space: nowrap;
-            color: $text;
-            font-weight: bold;
-            font-size: 1.3rem;
+          li {
+            & {
+              width: 20%;
+              list-style: none;
+            }
+            a {
+              text-decoration: none;
+              width: 100%;
+              white-space: nowrap;
+              color: $text;
+              font-weight: bold;
+              font-size: 1.3rem;
+            }
           }
         }
       }
     }
-  }
-  // القسم الثالث من الوتر
-  div:nth-child(3) {
-    &{
-      @include flex(center,center);
-      gap: 1%;
-      flex-direction: row-reverse;
-    }
-    img {
-      height: 30px;
-      cursor: pointer;
+    // القسم الثالث من الوتر
+    div:nth-child(3) {
+      img {
+        height: 60px;
+        cursor: pointer;
+      }
     }
   }
   > img {
-    &{
+    & {
       position: absolute;
       inset: auto 0 0 0;
       width: 100%;
@@ -216,7 +214,6 @@ footer {
       content: "";
       @include size(700px, 700px);
       background: radial-gradient(#08dcfd30, transparent 70%);
-      border-radius: 100%;
       position: absolute;
       right: 0%;
       top: 0%;
