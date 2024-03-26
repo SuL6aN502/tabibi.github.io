@@ -133,6 +133,9 @@ main {
       &:nth-child(even) {
         flex-direction: row-reverse;
       }
+      img{
+        z-index: -1;
+      }
       hgroup {
         & {
           text-align: right;

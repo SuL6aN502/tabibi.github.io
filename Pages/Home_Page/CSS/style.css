@@ -317,6 +317,9 @@ main section:nth-child(2) div {
 main section:nth-child(2) div:nth-child(even) {
   flex-direction: row-reverse;
 }
+main section:nth-child(2) div img {
+  z-index: -1;
+}
 main section:nth-child(2) div hgroup {
   text-align: right;
   width: 40%;
