@@ -304,6 +304,9 @@ main section:nth-child(2) span::after {
   top: -135%;
   z-index: 1;
 }
+main section:nth-child(2) h2 {
+  font-size: 2.5rem;
+}
 main section:nth-child(2) div {
   display: flex;
   justify-content: space-between;

@@ -122,6 +122,9 @@ main {
         z-index: 1;
       }
     }
+    h2{
+      font-size: 2.5rem;
+    }
     div {
       & {
         @include flex(space-between, center);

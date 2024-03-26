@@ -242,8 +242,17 @@ main section:nth-child(2) {
   flex-direction: column;
   padding: 0 10% 0 0;
 }
+main section:nth-child(2) > a:nth-child(1) {
+  width: 5%;
+  height: 5%;
+  position: relative;
+}
+main section:nth-child(2) > a:nth-child(1) > img {
+  width: 100%;
+  height: 100%;
+}
 main section:nth-child(2) h1 {
-  font-size: 3.3rem;
+  font-size: 6.3rem;
 }
 main section:nth-child(2) p {
   font-size: 1.1rem;
